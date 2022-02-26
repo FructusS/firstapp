@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".coffee_house_activity">
+
+    <ImageButton
+        style="@style/buttonBack"
+        android:id="@+id/backBtnCoffeeHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/outline_arrow_circle_left_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <com.example.javaapp.TypeTextView
+        android:id="@+id/coffeeTextStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:textColor="@color/main"
+        android:textSize="28dp"
+        android:paddingBottom="20sp"
+        android:text="@string/coffeeTextStart"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.example.javaapp.TypeTextView>
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.example.javaapp.TypeTextView
+            android:id="@+id/textbuild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:textAllCaps="false"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:text="Помещение"
+            android:textSize="28sp">
+
+        </com.example.javaapp.TypeTextView>
+
+
+        <com.example.javaapp.TypeTextView
+            android:id="@+id/textEmpl"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Работники"
+            android:textSize="28sp">
+
+        </com.example.javaapp.TypeTextView>
+
+
+        <com.example.javaapp.TypeTextView
+            android:id="@+id/textsup"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Поставщики"
+            android:textSize="28sp">
+
+        </com.example.javaapp.TypeTextView>
+        <com.example.javaapp.TypeTextView
+            android:id="@+id/textfinance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Финансы"
+            android:textSize="28sp"
+            android:paddingBottom="10dp">
+
+        </com.example.javaapp.TypeTextView>
+
+
+    </LinearLayout>
+
+    <com.example.javaapp.TypeTextView
+        android:id="@+id/algorithmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:minLines="3"
+        android:maxLines="5"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:scrollHorizontally="false"
+        android:text="Сейчас вам наш алгоритм соберёт все необходимые данные "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+    </com.example.javaapp.TypeTextView>
+
+    <Button
+        android:id="@+id/businessButton"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Собрать бизнес"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAllCaps="false">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

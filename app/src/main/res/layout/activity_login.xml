@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:textSize="28sp" />
+
+        <EditText
+
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="Почта"
+
+            android:inputType="textEmailAddress"
+            android:text=""
+
+
+            android:textColorHint="@color/text"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:text=""
+
+            android:textColorHint="@color/text"
+
+
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Button"
+            android:width="330dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/bg_first_button"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:text="@string/vhod"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:width="330dp"
+            android:id="@+id/buttonFalse"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+
+            android:background="@drawable/bg_second_button"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/nohaveacc"
+            android:textAllCaps="false"
+            android:textColor="@color/main"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonConfirm" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

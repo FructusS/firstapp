@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".People.search_people"
+    style="@style/searchbuildingBG">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backBtnSearchPeople"
+            style="@style/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/outline_arrow_circle_left_24"
+            ></ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:text="Поиск сотрудника"
+            android:textColor="@color/main"
+            android:textSize="22sp"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewPeople"
+        android:searchIcon="@drawable/outline_search_24"
+        android:commitIcon="@drawable/car"
+        android:searchHintIcon="@drawable/first"
+        android:closeIcon="@drawable/points"
+        android:goIcon="@drawable/storefront"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:queryHint="Поиск"
+        app:iconifiedByDefault="false"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPeople"
+        ></androidx.appcompat.widget.SearchView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPeople"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/searchViewPeople">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

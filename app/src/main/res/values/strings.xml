@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Spark</string>
+    <string name="start_text1">Привет, ты хочешь запустить свой бизнес?</string>
+    <string name="businessTextStart">В какой сфере ты хочешь создать свой бизнес?</string>
+    <string name="coffeeTextStart">Для того чтобы создать кофейню, нужны:</string>
+    <string name="text_button1">Да, хочу!</string>
+    <string name="text_button2">Нет, я хочу посмотреть товары</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="haveacc">У меня есть аккаунт</string>
+    <string name="hint_fio">ФИО</string>
+    <string name="hint_email">Почта</string>
+    <string name="hint_passport">Паспортные данные</string>
+    <string name="hint_inn">ИНН</string>
+    <string name="hint_pass">Пароль</string>
+    <string name="hint_pass_2">Повторить пароль</string>
+    <string name="acc_exists">У меня есть аккаунт</string>
+    <string name="findBuild">Поиск здания</string>
+    <string name="findEmployee">Поиск сотрудника</string>
+    <string name="findSupplier">Поиск поставщиков</string>
+    <string name="findBank">Поиск поставщиков</string>
+    <string name="textFindBuild">Наш алгоритм подобрал несколько зданий для вашей кофейни, мы основывались на плотности населений, количестве конкурентов, и средней цены за аренду помещения.</string>
+    <string name="textFindEmployee">Наш алгоритм подобрал несколько зданий для вашей кофейни, мы основывались на плотности населений, количестве конкурентов, и средней цены за аренду помещения.</string>
+    <string name="textFindSuppliers">Для правильного функционирования вашей кофейни вам потребуются поставщики, наш алгоритм собрал поставщиков, которые вам будут полезны.</string>
+    <string name="textFindBank">Для правильного функционирования вашей кофейни вам потребуются поставщики, наш алгоритм собрал поставщиков, которые вам будут полезны.</string>
+    <string name="png">png</string>
+    <string name="zdanie">Выбрать здание</string>
+    <string name="vhod">Войти</string>
+    <string name="nohaveacc">У меня нет аккаунта</string>
+    <string name="find_member">Поиск сотрудника</string>
+    <string name="member">Наш алгоритм подобрал несколько зданий для вашей кофейни, мы основывались на плотности населений, количестве конкурентов, и средней цены за аренду помоещения.</string>
+    <string name="member_button">Выбрать соискателя</string>
+    <string name="login">Авторизация</string>
+
+
+</resources>

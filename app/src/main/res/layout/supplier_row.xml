@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview1"
+    app:cardPreventCornerOverlap="true"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/white"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+
+
+        >
+
+
+        <ImageView
+            android:layout_gravity="left|center"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageSupplierRow"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            ></ImageView>
+
+
+        <LinearLayout
+            android:layout_toStartOf="@+id/imageBuildrow"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+
+
+            >
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+
+        android:layout_gravity="top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stars">
+
+    </ImageView>
+    <TextView
+
+        tools:text="123"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ratingRowSupplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:scrollHorizontally="false"
+
+        android:textSize="16dp"
+        android:layout_marginBottom="5dp">
+
+    </TextView>
+
+
+    <TextView
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:gravity="right"
+        tools:text="123"
+        android:id="@+id/costSupplierRow"
+        style="@style/infotextBuild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:layout_marginBottom="15dp">
+
+    </TextView>
+</LinearLayout>
+
+
+            <TextView
+
+                android:id="@+id/titleSupplierRow"
+                style="@style/infotextBuild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ellipsize="none"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:scrollHorizontally="false"
+                tools:text="123"></TextView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

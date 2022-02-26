@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Build.build_info"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shapeforimage"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/lr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:clipToOutline="true"
+            android:id="@+id/imageSupplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:clipToOutline="true"
+        android:id="@+id/lr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_weight="2"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/titleSupplier"
+            tools:text="123"
+            style="@style/titletextBuild"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/costSupplier"
+            style="@style/infotextBuild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="123"
+            android:paddingBottom="10dp"
+
+            android:textColor="#464444"></TextView>
+        <TextView
+            android:id="@+id/ratingSupplier"
+            style="@style/infotextBuild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="123"
+            android:paddingBottom="10dp"
+
+            android:textColor="#464444"></TextView>
+
+
+
+
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/line"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/descriptionSupplier"
+            style="@style/infotextBuild"
+            tools:text="123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#515151"
+            android:textSize="16sp"></TextView>
+
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+            <Button
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Связаться с соискателем"
+                android:textSize="14sp">
+
+            </Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right">
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    style="@style/ButtonFavorite"
+                    android:background="@drawable/button_favorite_shape"></ImageButton>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

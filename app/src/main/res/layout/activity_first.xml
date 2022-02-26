@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/startImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.javaapp.TypeTextView
+            android:id="@+id/startTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:padding="25dp"
+            android:text="@string/start_text1"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/main"
+            android:textSize="28sp"
+
+            app:layout_constraintBottom_toTopOf="@+id/buttonFalse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startImageView" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_first_button"
+        android:onClick="Confirm"
+        style="@style/Button"
+        android:text="@string/text_button1"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        style="@style/Button"
+        android:textAllCaps ="false"
+        android:fontFamily="@font/montserrat_bold"
+        android:id="@+id/buttonFalse"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_second_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfirm"
+        android:textColor="@color/main"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

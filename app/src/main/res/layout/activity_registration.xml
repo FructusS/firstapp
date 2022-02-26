@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="15dp"
+        android:text="Регистрация"
+        android:textColor="@color/main"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="ФИО"
+            android:textColorHint="@color/text"
+
+
+            android:textSize="18sp"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Почта"
+            android:textColorHint="@color/text"
+
+
+            android:textSize="18sp"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Паспортные данные"
+            android:textColorHint="@color/text"
+
+
+            android:textSize="18sp"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="ИНН"
+            android:textColorHint="@color/text"
+
+
+            android:textSize="18sp"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Пароль"
+            android:textColorHint="@color/text"
+
+
+            android:textSize="18sp"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Повторите пароль"
+            android:textColorHint="@color/text"
+
+
+            android:textSize="18sp"></EditText>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Зарегистрироваться с помощью"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></TextView>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_first_button"
+        android:onClick="Confirm"
+        style="@style/Button"
+        android:text="@string/registration"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:textAllCaps ="false"
+        android:id="@+id/buttonFalse"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/haveacc"
+        android:onClick="HaveAccount"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_second_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfirm"
+        android:textColor="@color/main"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
